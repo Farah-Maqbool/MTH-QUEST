@@ -3,40 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoft Tech Hub</title>
+    <title>Mentor Tech Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon32.png">
 </head>
 <body>
-    <header class="bg-dark text-white py-3 sticky-top shadow-header">
-        <div class="container d-flex align-items-center justify-content-between">
-            <img src="MTHlogo.png" alt="Microsoft Tech Hub Logo" class="logo">
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link text-white">About Us</a></li>
-                    <li class="nav-item"><a href="#scholar-section" class="nav-link text-white">Scholarships</a></li>
-                    <li class="nav-item"><a href="#team" class="nav-link text-white">Our Team</a></li>
-                    <li class="nav-item"><a href="#events" class="nav-link text-white">Events</a></li>
-                    <li class="nav-item"><a href="#blog" class="nav-link text-white">Articles</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact Us</a></li>
-                </ul>
+    <header class="site-header">
+        <div class="header-inner">
+        
+            <img src="MTHlogo.png" alt="Mentor Tech Hub Logo" class="header-logo">
+        
+            <!-- Hamburger (mobile) -->
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+            <span></span><span></span><span></span>
+            </button>
+        
+            <nav class="site-nav" id="siteNav">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#scholar-section">Scholarships</a>
+            <a href="#team">Our Team</a>
+            <a href="#events">Events</a>
+            <a href="#blog">Articles</a>
+            <a href="#contact" class="nav-cta">Contact Us</a>
             </nav>
+        
         </div>
     </header>
-
-    <section id="home" class="text-center py-5 bg-primary text-white">
-        <div class="container">
-            <h1 class="display-4">Welcome to Microsoft Tech Hub</h1>
-            <p class="lead">Empowering students through technology and innovation.</p>
+    <section id="home" class="hero">
+        <div class="hero-inner">
+        
+            <div class="hero-badge">
+            Official MLSA Chapter · Quest University
+            </div>
+        
+            <h1 class="hero-title">
+            Welcome to<br>
+            <span>Mentor</span> Tech Hub
+            </h1>
+        
+            <p class="hero-subtitle">
+            Empowering students through technology, mentorship, and innovation.
+            Join Pakistan's top student-led tech community.
+            </p>
+        
+            <div class="hero-actions">
+            <a href="#events" class="btn-primary-custom">Explore Events →</a>
+            <a href="#about" class="btn-outline-custom">About Us</a>
+            </div>
+        
+            <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-number">100+</div>
+                <div class="hero-stat-label">Events Hosted</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-number">Top 10</div>
+                <div class="hero-stat-label">MLSA Clubs in Pakistan</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-number">11+</div>
+                <div class="hero-stat-label">Team Members</div>
+            </div>
+            </div>
+        
         </div>
     </section>
 
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center text-primary mb-4">About Us</h2>
-            <p>Microsoft Tech Hub Quest Chapter is the official Microsoft Learn Student Ambassadors chapter of Quest University. We organize events and competitions to foster technical skills among students.</p>
+    <section id="about" class="about" aria-labelledby="about-heading">
+        <div class="about-inner">
+        
+            <!-- LEFT: Text Content -->
+            <div class="about-content">
+            <span class="section-label">Who We Are</span>
+        
+            <h2 class="section-title" id="about-heading">
+                From MLSA Chapter to<br>
+                <em>Mentor Tech Hub</em>
+            </h2>
+        
+            <p class="about-lead">
+                Mentor Tech Hub (MTH) is a student-led technical community at Quest University, 
+                dedicated to helping students learn, grow, and build real-world skills in modern technologies.
+            </p>
+        
+            <p class="about-body">
+                We started as the official <strong>Microsoft Learn Student Ambassadors (MLSA)</strong> chapter 
+                of Quest University and have since grown into something bigger. In <strong>2024</strong>, 
+                we rebranded as <strong>Mentor Tech Hub</strong>, reflecting our expanded mission: 
+                going beyond a single program to become a full community where every student, 
+                regardless of their background, can find guidance, opportunity, and growth in tech.
+            </p>
+        
+            <div class="about-highlight">
+                <span class="about-highlight-icon">🏆</span>
+                <p>
+                Recognised in <strong>2024</strong> by the <strong>Higher Education Commission (HEC)</strong> 
+                and the <strong>Microsoft Student Program</strong> as one of the 
+                <strong>Top 10 Most Influential Student Tech Clubs in Pakistan</strong>.
+                </p>
+            </div>
+        
+            <p class="about-body">
+                Through technical sessions, hands-on workshops, bootcamps, mentorship programs, 
+                collaborative projects, and learning opportunities MTH has directly impacted 
+                <strong>8,000+ students</strong> across Pakistan. We bridge the gap between 
+                classroom education and industry-ready skills in areas like AI, cloud computing, 
+                data science, cybersecurity, software development, and more.
+            </p>
+        
+            <ul class="about-pillars" aria-label="What we offer">
+                <li>Technical Workshops</li>
+                <li>Bootcamps</li>
+                <li>Mentorship Sessions</li>
+                <li>Certifications</li>
+                <li>Hackathons</li>
+                <li>Collaboration Programs</li>
+                <li>Career Guidance</li>
+                <li>Scholarships</li>
+            </ul>
+        
+            <a href="#events" class="btn-primary-custom">See Our Events →</a>
+            </div>
+        
+            <!-- RIGHT: Stats Cards -->
+            <div class="about-stats" aria-label="Mentor Tech Hub key statistics">
+        
+            <div class="about-stat-card">
+                <div class="about-stat-icon">🚀</div>
+                <div class="about-stat-number">8,000+</div>
+                <p class="about-stat-desc">
+                Students impacted through workshops, bootcamps, sessions, and mentorship programs since our founding.
+                </p>
+            </div>
+        
+            <div class="about-stat-card">
+                <div class="about-stat-icon">📅</div>
+                <div class="about-stat-number">100+</div>
+                <p class="about-stat-desc">Successful events hosted from online sessions to in-person tech talks.</p>
+            </div>
+        
+            <div class="about-stat-card">
+                <div class="about-stat-icon">🏅</div>
+                <div class="about-stat-number">Top 10</div>
+                <p class="about-stat-desc">Among the most influential student tech clubs in Pakistan, recognised by HEC.</p>
+            </div>
+        
+            </div>
+        
         </div>
     </section>
 

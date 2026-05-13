@@ -156,26 +156,106 @@
     </section>
 
    
-    <section id="events" class="py-5">
-        <div class="container">
-            <h2 class="text-center text-primary mb-4">Our Events</h2>
-    
-            <!-- Upcoming Events -->
-            <h3 class="text-primary mb-3">Upcoming Events</h3>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Comming Soon!</h5>
-                            <!-- <p class="card-text">Join us for an exciting 24-hour coding marathon to solve real-world problems!</p>
-                            <p><strong>Date:</strong> March 15, 2024</p>
-                            <p><strong>Venue:</strong> Quest University Auditorium</p>
-                            <a href="https://example.com/register-hackathon" target="_blank" class="btn btn-primary">Register Now</a> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more upcoming events here -->
+   <section id="events" class="events" aria-labelledby="events-heading">
+        <div class="events-inner">
+        
+            <div class="events-header">
+            <span class="section-label">What We Do</span>
+            <h2 class="section-title" id="events-heading">Our Events</h2>
+            <p>From hands-on workshops to panel discussions and certification bootcamps here's a look at what Mentor Tech Hub has organized for the community.</p>
+        
+            <!-- Filter Tabs -->
+            <div class="events-tabs" role="tablist" aria-label="Filter events">
+                <button class="events-tab active" data-filter="all">All Events</button>
+                <button class="events-tab" data-filter="upcoming">Upcoming</button>
+                <button class="events-tab" data-filter="past">Past</button>
             </div>
+            </div>
+        
+            <div class="events-grid" id="eventsGrid">
+        
+            <!-- UPCOMING — Coming Soon -->
+            <article class="event-card coming-soon" data-type="upcoming">
+                <div class="coming-icon">📅</div>
+                <h3>Next Event Coming Soon</h3>
+                <p>Stay tuned! Follow us on LinkedIn to be the first to know about our upcoming workshops, bootcamps, and sessions.</p>
+            </article>
+        
+            <!-- PAST EVENT 1: Tech گفتگو -->
+            <article class="event-card" data-type="past" aria-label="Tech Guftagu event">
+                <div class="event-card-top">
+                <span class="event-badge past">Past Event</span>
+                <span class="event-date-chip">📅 Oct 24, 2024</span>
+                </div>
+                <div class="event-card-body">
+                <h3>Tech گفتگو</h3>
+                <p>A panel discussion guiding freshman students through diverse career paths in technology — featuring expert insights on AI, cybersecurity, graphic design, and project management. Attended by 80+ students at Quest University.</p>
+                <div class="event-meta">
+                    <span>📍</span> Quest University Administration Hall
+                </div>
+                </div>
+                <div class="event-card-footer">
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7253799071969148928" target="_blank" rel="noopener">View on LinkedIn →</a>
+                </div>
+            </article>
+        
+            <!-- PAST EVENT 2: 7 Nights of Tech -->
+            <article class="event-card" data-type="past" aria-label="7 Nights of Tech with MTH">
+                <div class="event-card-top">
+                <span class="event-badge past">Past Event</span>
+                <span class="event-date-chip">📅 Jun 21–28, 2024</span>
+                </div>
+                <div class="event-card-body">
+                <h3>7 Nights of Tech with MTH</h3>
+                <p>A week-long online deep dive into cutting-edge tech — covering GitHub Copilot, cloud security, Jupyter Notebooks, Python for data, machine learning, JavaScript, DevOps, and resume building across seven nightly sessions.</p>
+                <div class="event-meta">
+                    <span>💻</span> Online
+                </div>
+                </div>
+                <div class="event-card-footer">
+                <a href="#" target="_blank" rel="noopener">View Details →</a>
+                </div>
+            </article>
+        
+            <!-- PAST EVENT 3: Azure to the Future -->
+            <article class="event-card" data-type="past" aria-label="Azure to the Future event">
+                <div class="event-card-top">
+                <span class="event-badge past">Past Event</span>
+                <span class="event-date-chip">📅 Feb 1, 2024</span>
+                </div>
+                <div class="event-card-body">
+                <h3>Azure to the Future</h3>
+                <p>An engaging session focused on Microsoft Azure AI — giving participants hands-on understanding of cloud computing and how artificial intelligence integrates with cloud platforms to build innovative, scalable solutions.</p>
+                <div class="event-meta">
+                    <span>📍</span> Quest University Administration Hall
+                </div>
+                </div>
+                <div class="event-card-footer">
+                <a href="#" target="_blank" rel="noopener">View Details →</a>
+                </div>
+            </article>
+        
+            <!-- PAST EVENT 4: Get Certified, Get Ahead -->
+            <article class="event-card" data-type="past" aria-label="Get Certified Get Ahead study group">
+                <div class="event-card-top">
+                <span class="event-badge past">Past Event</span>
+                <span class="event-date-chip">📅 Feb 17 – Mar 15, 2024</span>
+                </div>
+                <div class="event-card-body">
+                <h3>Get Certified, Get Ahead</h3>
+                <p>A free Microsoft Azure Study Group preparing students for AI-900 and AZ-900 certifications — featuring expert-led prep sessions, guided study, quizzes, and exam vouchers for top performers. All participants received certificates.</p>
+                <div class="event-meta">
+                    <span>💻</span> Online
+                </div>
+                </div>
+                <div class="event-card-footer">
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7164340956626862080/" target="_blank" rel="noopener">View on LinkedIn →</a>
+                </div>
+            </article>
+        
+            </div><!-- /.events-grid -->
+        </div>
+    </section>
     <section id="scholar-section" class="py-5 bg-light">
                 <div class="container">
                     <h2 class="text-center text-primary mb-4">Scholarship Section</h2>
@@ -206,61 +286,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Past Events -->
-            <h3 class="text-primary mt-5 mb-3">Few Past Events</h3>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Tech گفتگو</b></h5>
-                            <p class="card-text">Tech گفتگو was a panel discussion organized by Microsoft Tech Hub 
-                                to guide freshmen students about diverse career paths in technology, featuring expert insights on AI, 
-                                cybersecurity, graphic design and project management, attended by over 80 students.</p>
-                            <p><strong>Date:</strong> October 24, 2024</p>
-                            <p><strong>Venue:</strong> Quest University Administration Hall</p>
-                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7253799071969148928" target="_blank" class="btn btn-outline-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>7 Nights of Tech with MTH</b></h5>
-                            <p class="card-text"> 7 Nights with MTH was an exciting week-long event that offered a deep dive into various cutting-edge technologies. Over the course of seven nights, we hosted sessions on diverse topics, including GitHub Copilot, resume building, cloud security, Jupyter Notebooks, data manipulation with Python, machine learning, JavaScript, and DevOps. </p>
-                            <p><strong>Date:</strong> June 21 - June 28, 2024</p>
-                            <p><strong>Venue:</strong> Online</p>
-                            <a href="https://example.com/ai-bootcamp-2022" target="_blank" class="btn btn-outline-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Azure to the Future</b></h5>
-                            <p class="card-text">Azure to the Future was an engaging event focused on Microsoft Azure AI, where participants gained a deeper understanding of cloud computing and how artificial intelligence can be integrated into cloud platforms.This event aimed to empower participants with the knowledge and practical experience needed to leverage Azure AI for innovative solutions in the cloud computing space.</p>
-                            <p><strong>Date:</strong> Feb 1, 2024</p>
-                            <p><strong>Venue:</strong> Quest University Administration Hall</p>
-                            <a href="https://example.com/ai-bootcamp-2022" target="_blank" class="btn btn-outline-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-               <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Get Certified, Get Ahead</b></h5>
-                            <p class="card-text">Microsoft Azure Study Group was a free initiative to prepare participants for AI-900 and AZ-900 certifications. Spanning February 17th to March 15th, 2024, it included expert-led sessions, guided prep, and quizzes with winners receiving exam vouchers. Participants also earned certificates of participation. </p>
-                            <p><strong>Date:</strong> Feb 17 - March 15, 2024</p>
-                            <p><strong>Venue:</strong> Online</p>
-                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7164340956626862080/" target="_blank" class="btn btn-outline-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Add more past events here -->
-            </div>
-        </div>
     </section>
+            
     
     <section id="achievements" class="py-5 bg-light">
         <div class="container">

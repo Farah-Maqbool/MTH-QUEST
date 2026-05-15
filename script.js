@@ -64,4 +64,20 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // ── Team filter tabs ───────────────────────────────────
+  const teamTabs   = document.querySelectorAll('.team-tab');
+  const teamGroups = document.querySelectorAll('.team-section-group');
+
+  teamTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      teamTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const filter = tab.dataset.team;
+      teamGroups.forEach(group => {
+        group.classList.toggle('hidden', group.dataset.group !== filter);
+      });
+    });
+  });
 });

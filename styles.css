@@ -1352,5 +1352,114 @@ a  { text-decoration: none; color: inherit; }
 
 
 /* ============================================================
+   COLLABORATIONS SECTION
+   ============================================================ */
+.collaborations {
+  padding: 5.5rem 1.5rem;
+  background: var(--off-white);
+}
+
+.collaborations-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collaborations-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.collaborations-header .section-title { margin-bottom: .75rem; }
+
+.collaborations-header p {
+  color: var(--text-muted);
+  font-size: .975rem;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Marquee wrapper */
+.collab-track-wrapper {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* Marquee scroll */
+.collab-grid {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.collab-grid:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Card */
+.collab-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  flex-shrink: 0;
+  width: 160px;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.collab-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(0,123,255,.25);
+}
+
+.collab-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  display: block;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+}
+
+/* Placeholder when no image */
+.collab-logo-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue-deeper), var(--blue));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-family: var(--font-display);
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.2;
+  padding: .5rem;
+}
+
+.collab-card h3 {
+  font-family: var(--font-body);
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+
+/* ============================================================
    MORE SECTIONS WILL BE ADDED BELOW AS WE GO
    ============================================================ */
